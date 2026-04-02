@@ -280,3 +280,60 @@ text-align:center;
 margin-top:40px;
 }
 
+/* ========================= */
+/* PROJECT LINK FIX */
+/* ========================= */
+
+.project-link{
+text-decoration:none;
+color:white;
+display:flex;
+flex-direction:column;
+justify-content:center;
+}
+
+/* ========================= */
+/* MOBILE RESPONSIVE FIX */
+/* ========================= */
+
+@media (max-width:768px){
+
+nav{
+flex-direction:column;
+padding:15px 20px;
+gap:10px;
+text-align:center;
+}
+
+nav ul{
+flex-wrap:wrap;
+justify-content:center;
+padding:0;
+}
+
+#home{
+padding:80px 15px;
+}
+
+.profile{
+width:120px;
+}
+
+.project-container{
+padding:10px;
+}
+
+.card{
+width:100%;
+max-width:350px;
+}
+
+.skills-grid{
+padding:20px;
+}
+
+section{
+padding:50px 15px;
+}
+
+}
