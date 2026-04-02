@@ -284,14 +284,25 @@ margin-top:40px;
 /* PROJECT LINK FIX */
 /* ========================= */
 
+/* ===================================== */
+/* PROJECT CARD FINAL STYLE (NO BLUE) */
+/* ===================================== */
+
 .project-link{
-text-decoration:none;
-color:white;
-display:flex;
-flex-direction:column;
-justify-content:center;
+display:block;
+text-decoration:none !important;
+color:inherit !important;
 }
 
+.project-link *{
+color:inherit !important;
+text-decoration:none !important;
+}
+
+/* keep original card hover effect */
+.project-link:hover{
+color:inherit;
+}
 /* ========================= */
 /* MOBILE RESPONSIVE FIX */
 /* ========================= */
