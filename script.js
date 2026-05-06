@@ -1,5 +1,5 @@
-
 document.addEventListener("DOMContentLoaded", () => {
+
   /* === Typing animation === */
   new Typed("#typing", {
     strings: [
@@ -25,15 +25,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
   /* === Project Filter === */
   window.filterProjects = function(type) {
-  let cards = document.querySelectorAll(".card");
+    let cards = document.querySelectorAll(".card");
 
-  cards.forEach(card => {
-    if (type === "all" || card.classList.contains(type))
-      card.style.display = "flex";
-    else
-      card.style.display = "none";
-  });
-};
+    cards.forEach(card => {
+      if (type === "all" || card.classList.contains(type))
+        card.style.display = "flex";
+      else
+        card.style.display = "none";
+    });
+  };
+
+  /* ✅ ADD THIS LINE */
+  filterProjects("all");
+
   /* === Scroll Reveal === */
   ScrollReveal().reveal(".card", { delay: 200, distance: "40px", origin: "bottom" });
   ScrollReveal().reveal(".skill-card", { delay: 200, origin: "left" });
